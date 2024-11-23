@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import {BsArrowDownRight} from 'react-icons/bs'
 import Link from 'next/link'
@@ -7,40 +7,40 @@ import { easeIn, motion } from 'framer-motion'
 
 const services=[
   {
-    num: "01",
-    title : "Web Development",
-    description : "Build robust, scalable web applications using Python, Django, JavaScript, and React.",
-    href : ""
+    num: '01',
+    title : 'Web Development',
+    description : 'Build robust, scalable web applications using Python, Django, JavaScript, and React.',
+    href : ''
   },
   {
-    num: "02",
-    title : "E-commerce Solutions",
-    description : "Develop high-performance e-commerce platforms with secure payment integrations and seamless user experience.",
-    href : ""
+    num: '02',
+    title : 'E-commerce Solutions',
+    description : 'Develop high-performance e-commerce platforms with secure payment integrations and seamless user experience.',
+    href : ''
   },
   {
-    num: "03",
-    title : "SEO Optimization",
+    num: '03',
+    title : 'SEO Optimization',
     description : "Improve your website's search engine ranking with SEO-friendly design, content, and strategies.",
-    href : ""
+    href : ''
   },
   {
-    num: "04",
-    title : "Digital Marketing Strategy",
-    description : "Create and manage effective digital marketing campaigns to drive traffic and conversions.",
-    href : ""
+    num: '04',
+    title : 'Digital Marketing Strategy',
+    description : 'Create and manage effective digital marketing campaigns to drive traffic and conversions.',
+    href : ''
   },
   {
-    num: "05",
-    title : "Website Maintenance & Support",
-    description : "Offer ongoing support, updates, and performance monitoring to ensure your site runs smoothly.",
-    href : ""
+    num: '05',
+    title : 'Website Maintenance & Support',
+    description : 'Offer ongoing support, updates, and performance monitoring to ensure your site runs smoothly.',
+    href : ''
   },
   {
-    num: "06",
-    title : "AI & Machine Learning Integration",
-    description : "Implement AI solutions for data analysis, predictive models, and smart applications.",
-    href : ""
+    num: '06',
+    title : 'AI & Machine Learning Integration',
+    description : 'Implement AI solutions for data analysis, predictive models, and smart applications.',
+    href : ''
   },
   
 ]
@@ -55,7 +55,7 @@ const Services = () => {
           transition:{
             delay : 2.4,
             duration : 0.4,
-            ease : "easeIn"
+            ease : 'easeIn'
           }
         }}
 

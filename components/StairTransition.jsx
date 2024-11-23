@@ -1,10 +1,10 @@
-"use client"; 
+'use client'; 
 
-import { AnimatePresence, motion} from "framer-motion"
-import { usePathname } from "next/navigation"
+import { AnimatePresence, motion} from 'framer-motion'
+import { usePathname } from 'next/navigation'
 
 // Components
-import Stairs from "./Stairs"
+import Stairs from './Stairs'
 
 const StairTransition = () => {
     const pathName = usePathname()
@@ -17,7 +17,7 @@ const StairTransition = () => {
         <motion.div  
             inherit={{opacity : 1}}
             animate={{opacity: 0}}
-            transition={{delay: 1, duration: 0.4, ease: "easeInOut"}}
+            transition={{delay: 1, duration: 0.4, ease: 'easeInOut'}}
             className="h-screen w-screen fixed bg-primary top-0 pointer-events-none"/>
       </AnimatePresence>
     </div>

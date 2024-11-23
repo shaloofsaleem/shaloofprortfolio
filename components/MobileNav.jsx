@@ -1,30 +1,30 @@
-"use client";
+'use client';
 
-import { usePathname } from "next/navigation";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"; // Adjust this path to match your project structure
-import Link from "next/link"; // Correct import for Next.js
-import { CiMenuFries } from "react-icons/ci";
+import { usePathname } from 'next/navigation';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'; // Adjust this path to match your project structure
+import Link from 'next/link'; // Correct import for Next.js
+import { CiMenuFries } from 'react-icons/ci';
 
 const links = [
   {
-    name: "Home",
-    path: "/",
+    name: 'Home',
+    path: '/',
   },
   {
-    name: "Services",
-    path: "/services",
+    name: 'Services',
+    path: '/services',
   },
   {
-    name: "Resume",
-    path: "/resume",
+    name: 'Resume',
+    path: '/resume',
   },
   {
-    name: "Work",
-    path: "/work",
+    name: 'Work',
+    path: '/work',
   },
   {
-    name: "Contact",
-    path: "/contact",
+    name: 'Contact',
+    path: '/contact',
   },
 ];
 
@@ -53,8 +53,8 @@ const MobileNav = () => {
               key={index} // Assign key to the root element in a map
               className={`capitalize font-medium transition-all ${
                 link.path === pathname
-                  ? "text-accent border-b-2 border-accent"
-                  : "hover:text-accent"
+                  ? 'text-accent border-b-2 border-accent'
+                  : 'hover:text-accent'
               }`}
             >
               {link.name}

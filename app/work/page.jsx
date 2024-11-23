@@ -1,11 +1,11 @@
-"use client"
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
-import WorkSliderBtns from "@/components/WorkSliderBtns"
-import { motion } from "framer-motion"
-import Image from "next/image"
-import Link from "next/link"
-import { useState } from "react"
-import { BsArrowRight, BsGithub } from "react-icons/bs"
+'use client'
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
+import WorkSliderBtns from '@/components/WorkSliderBtns'
+import { motion } from 'framer-motion'
+import Image from 'next/image'
+import Link from 'next/link'
+import { useState } from 'react'
+import { BsArrowRight, BsGithub } from 'react-icons/bs'
 
 // Import Swiper styles
 import 'swiper/css';
@@ -13,129 +13,129 @@ import { Swiper, SwiperSlide } from 'swiper/react'; // import Swiper components
 
 const projects = [
   {
-    num: "01",
-    category: "E-commerce Website",
-    title: "Football Frenzy Shop",
-    description: "A feature-rich e-commerce platform built with Python Django, PostgreSQL, and Razorpay integration. Includes OTP verification, a custom admin panel, and AWS EC2 deployment for scalability and seamless performance.",
+    num: '01',
+    category: 'E-commerce Website',
+    title: 'Football Frenzy Shop',
+    description: 'A feature-rich e-commerce platform built with Python Django, PostgreSQL, and Razorpay integration. Includes OTP verification, a custom admin panel, and AWS EC2 deployment for scalability and seamless performance.',
     stack: [
-      { name: "HTML CSS JavaScript" },
-      { name: "Django Python Postgres" },
-      { name: "Twilio Paypal" },
+      { name: 'HTML CSS JavaScript' },
+      { name: 'Django Python Postgres' },
+      { name: 'Twilio Paypal' },
     ],
-    image: "/work/thumb1.png", // Corrected the image path
+    image: '/work/thumb1.png', // Corrected the image path
     live: '',
     github: '',
   },
   {
-    num: "02",
-    category: "API",
-    title: "BLOG-API",
+    num: '02',
+    category: 'API',
+    title: 'BLOG-API',
     description: "A blog API in Django is an API that allows developers to interact with a blog's data, such as posts, comments, and categories, usingDjango as the backend. To create a blog API in Django, you can use the Django Rest Framework,Integrated : J W T",
     stack: [
-      { name: "Django" },
-      {name: "REST Framework"},
-      { name: "Postgres" },
-      { name: "JWT" },
+      { name: 'Django' },
+      {name: 'REST Framework'},
+      { name: 'Postgres' },
+      { name: 'JWT' },
     ],
-    image: "/work/thumb1.png", // Corrected the image path
+    image: '/work/thumb1.png', // Corrected the image path
     live: '',
     github: '',
   },
   {
-    num: "03",
-    category: "CLONE",
-    title: "NEXTFLIX",
-    description: "A simple Netflix Clone made using React.js.Currently, I have implemented the basic UI with media details fetch functionality.Deployed it using netlify",
+    num: '03',
+    category: 'CLONE',
+    title: 'NEXTFLIX',
+    description: 'A simple Netflix Clone made using React.js.Currently, I have implemented the basic UI with media details fetch functionality.Deployed it using netlify',
     stack: [
-      { name: "React.js" },
-      { name: " TMDB API" },
-      { name: "JWT" },
+      { name: 'React.js' },
+      { name: ' TMDB API' },
+      { name: 'JWT' },
     ],
-    image: "/work/thumb1.png", // Corrected the image path
+    image: '/work/thumb1.png', // Corrected the image path
     live: '',
     github: '',
   },
   
   {
-    num: "04",
-    category: "Machine Learning",
-    title: "Number Plate Detection",
-    description: "Developed using Kaggle datasets, YOLOv5, OpenCV, and EasyOCR, this system efficiently detects and classifies license plates, showcasing expertise in computer vision.",
+    num: '04',
+    category: 'Machine Learning',
+    title: 'Number Plate Detection',
+    description: 'Developed using Kaggle datasets, YOLOv5, OpenCV, and EasyOCR, this system efficiently detects and classifies license plates, showcasing expertise in computer vision.',
     stack: [
-      { name: "Kaggle" },
-      { name: "YOLOv5" },
-      { name: "OpenCV" },
-      { name: "EasyOCR" },
+      { name: 'Kaggle' },
+      { name: 'YOLOv5' },
+      { name: 'OpenCV' },
+      { name: 'EasyOCR' },
     ],
-    image: "/work/thumb2.png", // Corrected the image path
+    image: '/work/thumb2.png', // Corrected the image path
     live: '',
     github: '',
   },
   {
-    num: "05",
-    category: "Machine Learning",
-    title: "BOOK RECOMMENDER SYSTEM",
-    description: "Built a Book recommender system to recommend BOOK based on the selected BOOK.",
+    num: '05',
+    category: 'Machine Learning',
+    title: 'BOOK RECOMMENDER SYSTEM',
+    description: 'Built a Book recommender system to recommend BOOK based on the selected BOOK.',
     stack: [
-      { name: "Python" },
-      { name: "Numpy, Pandas" },
-      { name: "Flask" },
+      { name: 'Python' },
+      { name: 'Numpy, Pandas' },
+      { name: 'Flask' },
     ],
-    image: "/work/thumb2.png", // Corrected the image path
+    image: '/work/thumb2.png', // Corrected the image path
     live: '',
     github: '',
   },
   {
-    num: "06",
-    category: "Detection",
-    title: "American Sign Language (ASL)",
-    description: "A robust detection system using cvzone, trained on custom datasets for accurate ASL classification.",
+    num: '06',
+    category: 'Detection',
+    title: 'American Sign Language (ASL)',
+    description: 'A robust detection system using cvzone, trained on custom datasets for accurate ASL classification.',
     stack: [
-      { name: "Python" },
-      { name: "cvzone, OpenCV" },
+      { name: 'Python' },
+      { name: 'cvzone, OpenCV' },
     ],
-    image: "/work/thumb3.png", // Corrected the image path
+    image: '/work/thumb3.png', // Corrected the image path
     live: '',
     github: '',
   },
   {
-    num: "07",
-    category: "Detection",
-    title: "Emotion Detection with CNN",
-    description: "Built a CNN-based model for real-time emotion detection from videos and images, leveraging ImageDataGenerator for data preprocessing.",
+    num: '07',
+    category: 'Detection',
+    title: 'Emotion Detection with CNN',
+    description: 'Built a CNN-based model for real-time emotion detection from videos and images, leveraging ImageDataGenerator for data preprocessing.',
     stack: [
-      { name: "Python" },
-      { name: "TensorFlow" },
-      { name: "Keras" },
+      { name: 'Python' },
+      { name: 'TensorFlow' },
+      { name: 'Keras' },
     ],
-    image: "/work/thumb3.png", // Corrected the image path
+    image: '/work/thumb3.png', // Corrected the image path
     live: '',
     github: '',
   },
   {
-    num: "08",
-    category: "Detection",
-    title: "Object Detection with OpenCV",
-    description: "Object-detection-using-deep-learning-withOpenCV-and-Pythonssd_mobilenet_v3_large_coco_2020_01_14.pbtxt",
+    num: '08',
+    category: 'Detection',
+    title: 'Object Detection with OpenCV',
+    description: 'Object-detection-using-deep-learning-withOpenCV-and-Pythonssd_mobilenet_v3_large_coco_2020_01_14.pbtxt',
     stack: [
-      { name: "Python" },
-      { name: "OpenCV" },
-      { name: "Deep Learning" },
+      { name: 'Python' },
+      { name: 'OpenCV' },
+      { name: 'Deep Learning' },
     ],
-    image: "/work/thumb3.png", // Corrected the image path
+    image: '/work/thumb3.png', // Corrected the image path
     live: '',
     github: '',
   },
   {
-    num: "06",
-    category: "Detection",
-    title: "Face Recognition Attendance System",
-    description: "Real-time attendance tracking using OpenCV, automatically recording data into Excel via webcam detection.",
+    num: '06',
+    category: 'Detection',
+    title: 'Face Recognition Attendance System',
+    description: 'Real-time attendance tracking using OpenCV, automatically recording data into Excel via webcam detection.',
     stack: [
-      { name: "Python" },
-      { name: "OpenCV" },
+      { name: 'Python' },
+      { name: 'OpenCV' },
     ],
-    image: "/work/thumb3.png", // Corrected the image path
+    image: '/work/thumb3.png', // Corrected the image path
     live: '',
     github: '',
   }
@@ -153,7 +153,7 @@ const Work = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: {delay:2.4, duration: 0.4, ease: "easeIn" } }}
+      animate={{ opacity: 1, transition: {delay:2.4, duration: 0.4, ease: 'easeIn' } }}
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
       <div className="container mx-auto">
@@ -171,7 +171,7 @@ const Work = () => {
                 {project.stack.map((item, index) => (
                   <li key={index} className="text-xl text-accent">
                     {item.name}
-                    {index !== project.stack.length - 1 && ", "}
+                    {index !== project.stack.length - 1 && ', '}
                   </li>
                 ))}
               </ul>

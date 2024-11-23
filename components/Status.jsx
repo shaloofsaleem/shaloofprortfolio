@@ -1,23 +1,23 @@
-"use client"
+'use client'
 
-import CountUp, { useCountUp } from "react-countup"
+import CountUp, { useCountUp } from 'react-countup'
 
 const status =[
     {
         num:4,
-        text: "Year of Experince"
+        text: 'Year of Experince'
     },
     {
         num:26,
-        text: "Project Completed"
+        text: 'Project Completed'
     },
     {
         num:8,
-        text: "Technologies Master"
+        text: 'Technologies Master'
     },
     {
         num:500,
-        text: "Code Commits"
+        text: 'Code Commits'
     },
 ]
 const Status = () => {
@@ -34,7 +34,7 @@ const Status = () => {
                                 delay={2} 
                                 className="text-4xl lg:text-6xl font-extrabold"/>
                                 <p className={`${
-                                    item.text.length<15? "max-w-[100px]" :" max-w-[160px]"
+                                    item.text.length<15? 'max-w-[100px]' :' max-w-[160px]'
                                     }leading-snug text-white/80 `}>{item.text}</p>
                             </div>
                         })

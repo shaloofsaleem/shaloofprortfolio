@@ -1,8 +1,8 @@
-import Link from "next/link"
-import { Button } from "./ui/button"
+import Link from 'next/link'
+import { Button } from './ui/button'
 // Components
-import Nav from "./Nav"
-import MobileNav from "./MobileNav"
+import Nav from './Nav'
+import MobileNav from './MobileNav'
 
 function Header() {
   return (

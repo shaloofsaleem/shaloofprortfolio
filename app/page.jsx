@@ -1,10 +1,10 @@
-import { Button } from "@/components/ui/button"
-import {FiDownload} from "react-icons/fi"
+import { Button } from '@/components/ui/button'
+import {FiDownload} from 'react-icons/fi'
 
 //Components
-import Social from "@/components/Social"
-import Photo from "@/components/Photo"
-import Status from "@/components/Status"
+import Social from '@/components/Social'
+import Photo from '@/components/Photo'
+import Status from '@/components/Status'
 
 const page = () => {
   return (

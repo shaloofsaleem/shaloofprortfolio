@@ -1,7 +1,7 @@
-"use client"
-import { delay, motion } from "framer-motion"
-import Image from "next/image"
-import LatestImg from "../public/photo.png"
+'use client'
+import { delay, motion } from 'framer-motion'
+import Image from 'next/image'
+import LatestImg from '../public/photo.png'
 
 const Photo = () => {
   return (
@@ -10,7 +10,7 @@ const Photo = () => {
       initial={{opacity: 0}}
       animate ={{
         opacity: 1,
-        transition: {delay:2 , duration:0.4, ease: "easeIn"}
+        transition: {delay:2 , duration:0.4, ease: 'easeIn'}
       }}
 
       >
@@ -19,7 +19,7 @@ const Photo = () => {
         initial={{opacity: 0}}
         animate ={{
           opacity: 1,
-          transition: {delay:2.4 , duration:0.4, ease: "easeInOut"}
+          transition: {delay:2.4 , duration:0.4, ease: 'easeInOut'}
         }}
         className="w-[298px] h-[298px] xl:w-[498px]  xl:h-[498px] mix-blend-lighten absolute">
             <Image src={LatestImg} alt="alt" priority quality={100} fill className="object-contain" />
@@ -38,16 +38,16 @@ const Photo = () => {
             strokeLinecap="round"
             strokeLinejoin="round"
             inherit={{
-                strokeDasharray: "24 10 0 0"
+                strokeDasharray: '24 10 0 0'
             }}
             animate={{
-                strokeDasharray: ["15 120 25 25", "16 25 92 72", "4 250 22 22"],
+                strokeDasharray: ['15 120 25 25', '16 25 92 72', '4 250 22 22'],
                 rotate:[120, 360]
             }}
             transition={{
                 duration: 20,
                 repeat: Infinity,
-                repeatType: "reverse"
+                repeatType: 'reverse'
             }}/>
         </motion.svg>
       </motion.div>

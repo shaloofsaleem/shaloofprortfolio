@@ -4,7 +4,7 @@
 import 'swiper/css';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'; // import Swiper components
 
-import { PiCaretLeftBold, PiCaretRightBold } from "react-icons/pi";
+import { PiCaretLeftBold, PiCaretRightBold } from 'react-icons/pi';
 
 
 const WorkSliderBtns = ({containerStyle, btnStyle, iconsStyle}) => {
